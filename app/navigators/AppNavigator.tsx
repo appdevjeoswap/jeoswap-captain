@@ -4,9 +4,10 @@
  * Generally speaking, it will contain an auth flow (registration, login, forgot password)
  * and a "main" flow which the user will use once logged in.
  */
-import { ComponentProps } from "react"
 import { NavigationContainer, NavigatorScreenParams } from "@react-navigation/native"
 import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack"
+// eslint-disable-next-line import/order
+import { ComponentProps } from "react"
 
 import Config from "@/config"
 import { useAuth } from "@/context/AuthContext"
